@@ -10,8 +10,12 @@ const port = process.env.PORT || 8000;
 
 // Testing response on browser
 app.get('/', (req, res) => {
-  res.send('Hello, World!');
+  res.send(`
+    <h1>Click Below Link To Continue</h1>
+    <a href="https://discord.gg/ZrJrcvZdzk" target="_blank">Join Discord Bot</a>
+  `);
 });
+
 
 
 const client = new Client({ 
