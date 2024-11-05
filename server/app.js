@@ -8,6 +8,12 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 8000;
 
+// Testing response on browser
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
+
 const client = new Client({ 
   intents: [
     GatewayIntentBits.Guilds, 
